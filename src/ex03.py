@@ -4,6 +4,11 @@ Execise 3
 
 
 def is_odd(num):
+    if num %2 == 1:
+        return True
+    else:
+        return False
+
     """
     Check if a number is odd.
 
@@ -18,6 +23,11 @@ def is_odd(num):
 
 
 def is_even(num):
+    if num %2 ==0:
+        return True
+    else:
+        return False
+
     """
     Determines if a given number is even.
 
