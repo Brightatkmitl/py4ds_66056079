@@ -4,6 +4,10 @@ Execise 7
 
 
 def print_ASCII_table():
+    for i in range(32,127):
+        print(i,str(i))
+
+
     """
     Generate and print the ASCII table for a range of characters.
 
