@@ -3,7 +3,13 @@ Execise 8
 """
 
 
-def write_to_file(param, param1):
+def write_to_file(file, text):
+    with open(file,'w') as fileObj:
+        fileObj.write(text)
+
+
+
+
     """
     Write the given message to a file with the provided filename.
 
@@ -18,7 +24,12 @@ def write_to_file(param, param1):
     pass
 
 
-def read_from_file(param):
+def read_from_file(file):
+    with open(file) as fileObj:
+
+        return fileObj.read()
+
+
     """
     Read the contents of a file.
 
@@ -32,7 +43,10 @@ def read_from_file(param):
     pass
 
 
-def append_to_file(param, param1):
+def append_to_file(file, text):
+    with open(file,"a") as fileObj:
+        fileObj.write(text)
+
     """
     Append the given message to the end of the specified file.
 
