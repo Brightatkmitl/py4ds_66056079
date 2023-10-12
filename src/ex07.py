@@ -3,9 +3,10 @@ Execise 7
 """
 
 
-def print_ASCII_table():
-    for i in range(32,127):
-        print(i,str(i))
+def print_ASCII_table(start,end):
+    for i in range(start,end+1):
+        print(chr(i))
+
 
 
     """
@@ -21,3 +22,7 @@ def print_ASCII_table():
     """
     # TODO : complete this
     pass
+
+#%%
+# print_ASCII_table()
+#%%

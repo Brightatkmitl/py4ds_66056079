@@ -3,7 +3,22 @@ Exercise 11
 """
 
 
-def get_hr_min_sec(param):
+def get_hr_min_sec(inputSec):
+    result = ''
+    sec = inputSec % 60
+    min = (inputSec // 60) % 60
+    hour = inputSec // 3600
+    if inputSec == 0:
+        return '0s'
+    if sec > 0:
+        result = str(sec) + 's '
+    if min > 0:
+        result = str(min) + 'm ' + result
+    if hour > 0:
+        result = str(hour) + 'h ' + result
+    return result.strip()
+
+
     """
     Generates a string representation of the given number
     of seconds in the format "9h 9m 9s".

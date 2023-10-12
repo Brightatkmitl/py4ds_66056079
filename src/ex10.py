@@ -3,7 +3,18 @@ Execise 10
 """
 
 
-def find_and_replace(param, param1, param2):
+def find_and_replace(text, old_text, new_text):
+    replace = ""
+    i=0
+    while i < len(text):
+        if text[i:i + len(old_text)] == old_text:
+            replace += new_text
+            i += len(old_text)
+        else:
+            replace += text[i]
+            i += 1
+    return replace
+
     """
     Find and replace all occurrences of a substring in a given text.
 
